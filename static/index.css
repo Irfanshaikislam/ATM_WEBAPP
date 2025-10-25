@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #004e92, #000428);
+    color: white;
+}
+.button-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+.Heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.Company {
+    color: #00bfff;
+    font-weight: 700;
+}
+button {
+    background-color: #131516;
+    color: #ffbf00;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    width: 200px;
+}
+button:hover {
+    background-color: white;
+    color: #004e92;
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    .Heading {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .button-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

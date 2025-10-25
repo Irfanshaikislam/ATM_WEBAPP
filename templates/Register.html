@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="register-container">
+        <form method="POST" action="">
+            <h3 class="Heading">Register into Account</h3>
+            <label for="name">User Name:</label>
+            <input type="text" name="username" id="name" placeholder="Enter User Name"><br/><br/>
+            <label for="mail">User Email:</label>
+            <input type="email" name="usermail" id="mail" placeholder="Enter User Email"><br/><br/>
+            <label for="Password">User Password:</label>
+            <input type="password" name="userpassword" id="Password" placeholder="Enter User Password"><br/><br/>
+            <label for="pin">Pin No:</label>
+            <input type="text" name="pinNumber" id="pin" placeholder="Enter the Pin Number"><br/><br/>
+            <div class="button-container">
+                <a href="{{url_for('Login')}}"><button type="submit">Submit</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

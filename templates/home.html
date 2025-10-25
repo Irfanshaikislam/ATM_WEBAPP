@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBI home page</title>
+    <link rel="stylesheet" href="../static/home.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <nav class="navbar">
+        <ul>
+          <li><a href="">{{username}}</a></li>
+          <li><a href="./05_balance.html">Balance</a></li>
+          <li><a href="{{url_for('deposit')}}">Deposit</a></li>
+          <li><a href="{{url_for('withdraw')}}">Withdrawal</a></li>
+          <li><a href="./08_statement.html">Mini-Statement</a></li>
+          <li><a href="">Logout</a></li>
+          <li><a href="">Delete Account</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
