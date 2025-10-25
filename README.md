@@ -52,35 +52,34 @@ Then open your browser and visit:
 
 http://127.0.0.1:5000/
 
-📁 Project Structure
+## 📁 Project Structure
 ------------------------------
 ATM-Flask-App/
 │
-├── app.py                            # Main Flask application file
+├── app.py # Main Flask application file
 │
-├── static/                           # All static frontend files
-│   ├── css/
-│   │   └── style.css                 # Main stylesheet
-│   │
-│   ├── js/
-│   │   └── script.js                 # JavaScript for frontend behavior
-│   │
-│   └── images/                       # Optional: store logo or icons
-│       └── atm_logo.png
+├── static/ # All static frontend files
+│ ├── css/
+│ │ └── style.css # Main stylesheet
+
+│ │
+│ ├── js/
+│ │ └── script.js # JavaScript for frontend behavior
+│ │
+│ └── images/ # Optional: store logo or icons
+│ └── atm_logo.png
 │
-├── templates/                        # All HTML templates
-│   ├── index.html                    # Homepage
-│   ├── Register.html                 # Registration form
-│   ├── login.html                    # Login form
-│   ├── home.html                     # User dashboard
-│   ├── deposit.html                  # Deposit money page
-│   └── withdrawal.html               # Withdraw money page
+├── templates/ # All HTML templates
+│ ├── index.html # Homepage
+│ ├── Register.html # Registration form
+│ ├── login.html # Login form
+│ ├── home.html # User dashboard
+│ ├── deposit.html # Deposit money page
+│ └── withdrawal.html # Withdraw money page
 │
-├── README.md                         # Project documentation (generated earlier)
-│
-├── .gitignore                        # Files to ignore by Git
-│
-└── requirements.txt                  # Python dependencies
+├── README.md # Project documentation
+├── .gitignore # Files to ignore by Git
+└── requirements.txt # Python dependencies
 
 
 🔒 Validation Rules
