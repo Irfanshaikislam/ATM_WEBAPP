@@ -54,25 +54,34 @@ http://127.0.0.1:5000/
 
 📁 Project Structure
 ------------------------------
-atm-flask-app/
+ATM-Flask-App/
 │
-├── app.py                # Main Flask application
-├── templates/            # HTML files (index, login, register, etc.)
-│   ├── index.html
-│   ├── login.html
-│   ├── Register.html
-│   ├── home.html
-│   ├── deposit.html
-│   └── withdrawal.html
+├── app.py                            # Main Flask application file
 │
-├── static/               # CSS, JS, and image files
+├── static/                           # All static frontend files
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css                 # Main stylesheet
+│   │
 │   ├── js/
-│   │   └── script.js
-│   └── images/
+│   │   └── script.js                 # JavaScript for frontend behavior
+│   │
+│   └── images/                       # Optional: store logo or icons
+│       └── atm_logo.png
 │
-└── README.md             # Project documentation
+├── templates/                        # All HTML templates
+│   ├── index.html                    # Homepage
+│   ├── Register.html                 # Registration form
+│   ├── login.html                    # Login form
+│   ├── home.html                     # User dashboard
+│   ├── deposit.html                  # Deposit money page
+│   └── withdrawal.html               # Withdraw money page
+│
+├── README.md                         # Project documentation (generated earlier)
+│
+├── .gitignore                        # Files to ignore by Git
+│
+└── requirements.txt                  # Python dependencies
+
 
 🔒 Validation Rules
 
