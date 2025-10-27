@@ -57,7 +57,8 @@ def deposit():
                     if amount%100==0:
                         users[username]['amount']+=amount
                         deposittime=datetime.now()
-                        statements[username]['deposit'].extend((amount,deposittime))
+                        depositeddata=(amount,deposittime)
+                        statements[username]['deposit'].append(depositeddata)
                         return redirect(url_for('balance'))
                     else:
                         return f'{amount} the amount should be multiply of 100'
@@ -80,7 +81,8 @@ def withdraw():
                         if amount%100==0:
                             users[username]['amount']-=amount
                             withdrawtime=datetime.now()
-                            statements[username]['withdraw'].extend((amount,withdrawtime))
+                            withdrawdata=(amount,withdrawtime)
+                            statements[username]['withdraw'].append(withdrawdata)
                             return redirect(url_for('balance'))
                         else:
                             return "amount not multiple of 100"
