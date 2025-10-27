@@ -150,6 +150,3 @@ Feel free to use, modify, and improve it.
 If you find this project helpful, please ⭐ it on GitHub.
 Your support motivates the next version with full MySQL database support!
 
----
-
-Would you like me to **export this as a real `README.md` file** (so you can upload it to your GitHub repo directly)?
