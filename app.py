@@ -84,4 +84,10 @@ def withdraw():
         return render_template('withdrawal.html')
     else:
         return redirect('02_login.html')
+@app.route('/balance',methods=['GET'])
+def balance():
+    if request.cookies.get('username'):
+        username=request.cookies.get('username')
+        balanceAmount=users[username]['amount']
+        return render_template('balance.html',Balance=balanceAmount)
 app.run(use_reloader=True,debug=True)
