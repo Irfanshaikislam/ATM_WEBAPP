@@ -109,7 +109,7 @@ def mini_statements():
         print(deposit_statements)
         withdraw_statements=statements[username]['withdraw']
         print(withdraw_statements)
-        return render_template('statement.html')
+        return render_template('statement.html',deposit_statements=deposit_statements,withdraw_statements=withdraw_statements)
     else:
         return redirect(url_for('Login'))
 app.run(use_reloader=True,debug=True)

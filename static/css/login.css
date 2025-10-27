@@ -12,7 +12,7 @@ body {
     align-items: center;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
-    background-image: url(../static/assets/login.webp);
+    background-image: url(../assets/login.webp);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .button-container button {
-    background-color: #00bfff;
+    background-color: #1eff00;
     color: white;
     border: none;
     padding: 10px 25px;

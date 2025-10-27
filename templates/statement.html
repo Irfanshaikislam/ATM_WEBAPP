@@ -16,14 +16,12 @@
       </tr>
     </thead>
     <tbody>
+      {% for i in deposit_statements %}
       <tr>
-        <td class="deposit">$500.00</td>
-        <td>2025-10-24 10:30 AM</td>
+        <td class="deposit">${{i[0]}}</td>
+        <td>{{i[1]}}</td>
       </tr>
-      <tr>
-        <td class="deposit">$200.00</td>
-        <td>2025-10-22 3:45 PM</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 
@@ -36,14 +34,12 @@
       </tr>
     </thead>
     <tbody>
+      {% for i in withdraw_statements %}
       <tr>
-        <td class="withdraw">$100.00</td>
-        <td>2025-10-23 1:15 PM</td>
+        <td class="withdraw">${{i[0]}}</td>
+        <td>{{i[1]}}</td>
       </tr>
-      <tr>
-        <td class="withdraw">$50.00</td>
-        <td>2025-10-21 5:20 PM</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </body>
