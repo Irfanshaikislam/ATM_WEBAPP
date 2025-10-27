@@ -112,4 +112,3 @@ def mini_statements():
         return render_template('statement.html',deposit_statements=deposit_statements,withdraw_statements=withdraw_statements)
     else:
         return redirect(url_for('Login'))
-app.run(use_reloader=True,debug=True)
