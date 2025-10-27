@@ -38,7 +38,7 @@ def Login():
                  return 'Account Number is wrong'
          else:
              return 'user name is wrong'
-    return render_template('login.html')
+    return render_template('Login.html')
 @app.route('/dashboard')
 def home():
     if request.cookies.get('username'):
