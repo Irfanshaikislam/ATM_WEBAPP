@@ -112,3 +112,21 @@ def mini_statements():
         return render_template('statement.html',deposit_statements=deposit_statements,withdraw_statements=withdraw_statements)
     else:
         return redirect(url_for('Login'))
+@app.route('/logout')
+def logout():
+    if request.cookies.get('username'):
+        resp=make_response(redirect(url_for('Login')))
+        resp.delete_cookie('username')
+        return resp
+    else:
+        return 'PLEASE LOGIN TO LOGOUT'
+@app.route('/delete')
+def delete():
+     if request.cookies.get('username'):
+        username=request.cookies.get('username')
+        users.pop(username)
+        resp=make_response(redirect(url_for('Create_Account')))
+        resp.delete_cookie('username')
+        return resp
+     else:
+         return 'PLEASE LOGIN TO DELETE YOUR ACCOUNT'
