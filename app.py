@@ -147,4 +147,3 @@ def update():
         return render_template('update.html', username=username)
     else:
         return redirect(url_for('Login'))
-app.run()
