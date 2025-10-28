@@ -26,18 +26,16 @@ Currently, it uses **in-memory storage**, with future updates planned for **MySQ
 
 ## 📸 Screenshots
 
-> Replace these placeholders with your actual screenshots (stored in `/static/assets/`).
 
 | Page | Screenshot |
 |------|-------------|
-| 🏠 **Home Page** | ![Home Page](static/assets/dashboard.png) |
-| 🔐 **Login Page** | ![Login Page](static/assets/login.webp) |
-| 🧾 **Register Page** | ![Register Page](static/assets/register.webp) |
-| 💰 **Deposit Page** | ![Deposit Page](static/assets/deposit.jpg) |
-| 📜 **Mini Statement** | *(Add screenshot later)* |
-
-> 📌 *All assets are stored under `static/assets/`. Make sure image paths match your repository’s folder structure.*
-
+| 🧾 **Welcome Page** | ![Welcome Page](static/assets/welcomepage.png) |
+| 🧾 **Register Page** | ![Register Page](static/assets/atmregister.png) |
+| 🔐 **Login Page** | ![Login Page](static/assets/atmlogin.png) |
+| 🏠 **Home Page** | ![Home Page](static/assets/atmdashboard.png) |
+| 💰 **Deposit Page** | ![Deposit Page](static/assets/depositmoney.png) |
+| 💰 **Withdraw Page** | ![Withdraw Page](static/assets/withdrawmoney.png) |
+| 📜 **Mini Statement** | [Mini Statement Page](static/assets/mini_statements.png)|
 ---
 
 ## 📁 Project Structure
