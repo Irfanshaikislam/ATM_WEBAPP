@@ -35,7 +35,7 @@ def Login():
                  else:
                     return 'Pin Number is wrong'
              else:
-                 return 'Account Number is wrong'
+                 return 'Password Number is wrong'
          else:
              return 'user name is wrong'
     return render_template('Login.html')
@@ -130,3 +130,21 @@ def delete():
         return resp
      else:
          return 'PLEASE LOGIN TO DELETE YOUR ACCOUNT'
+@app.route('/update', methods=['GET', 'POST'])
+def update():
+    if request.cookies.get('username'):
+        username = request.cookies.get('username')
+        if request.method == 'POST':
+            new_password = request.form['new_password']
+            new_pin = request.form['new_pin']
+
+            if new_password and new_pin:
+                users[username]['userpassword'] = new_password
+                users[username]['pin'] = new_pin
+                return 'Account details updated successfully for user!'
+            else:
+                return ' Both fields are required!'
+        return render_template('update.html', username=username)
+    else:
+        return redirect(url_for('Login'))
+app.run()

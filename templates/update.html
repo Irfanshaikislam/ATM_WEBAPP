@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../static/css/update.css"
+    />
+    <title>Update User</title>
+  </head>
+  <body>
+    <div class="update-container">
+      <h2>Update Account</h2>
+      <p>Modify your password or PIN securely, {{ username }}</p>
+
+      <form method="POST" action="/update">
+        <label for="newpassword">New Password:</label>
+        <input
+          type="password"
+          name="new_password"
+          id="newpassword"
+          placeholder="Enter New Password"
+          required
+        />
+
+        <label for="newpin">New PIN Number:</label>
+        <input
+          type="password"
+          name="new_pin"
+          id="newpin"
+          placeholder="Enter New PIN Number"
+          required
+        />
+
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
