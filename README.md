@@ -35,7 +35,7 @@ Currently, it uses **in-memory storage**, with future updates planned for **MySQ
 | 🏠 **Home Page** | ![Home Page](static/assets/atmdashboard.png) |
 | 💰 **Deposit Page** | ![Deposit Page](static/assets/depositmoney.png) |
 | 💰 **Withdraw Page** | ![Withdraw Page](static/assets/withdrawmoney.png) |
-| 📜 **Mini Statement** | [Mini Statement Page](static/assets/mini_statements.png)|
+| 📜 **Mini Statement** | [Mini Statement Page](static/assets/mini_statements.png) |
 ---
 
 ## 📁 Project Structure
